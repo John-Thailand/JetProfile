@@ -16,6 +16,8 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Email
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Divider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -114,6 +116,16 @@ class MainActivity : ComponentActivity() {
                                 modifier = Modifier.clip(RoundedCornerShape(1000.dp)),
                                 thickness = 2.dp,
                             )
+                        }
+                        
+                        Spacer(modifier = Modifier.height(20.dp))
+                        
+                        Button(
+                            modifier = Modifier.fillMaxWidth(),
+                            colors = ButtonDefaults.buttonColors(Color(0xFFF85F6A)),
+                            onClick = { /*TODO*/ },
+                        ) {
+                            Text(text = "詳細を表示", color = Color.White)
                         }
                     }
                 }
