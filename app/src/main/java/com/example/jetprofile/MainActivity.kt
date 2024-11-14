@@ -7,6 +7,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -64,6 +65,25 @@ class MainActivity : ComponentActivity() {
                             color = Color.Gray,
                             fontSize = 16.sp,
                         )
+                        
+                        Spacer(modifier = Modifier.height(20.dp))
+
+                        Column(
+                            horizontalAlignment = Alignment.Start,
+                            modifier = Modifier.fillMaxWidth(),
+                        ) {
+                            Text(
+                                text = "StarryBase LLC",
+                                fontSize = 26.sp,
+                                fontWeight = FontWeight.Bold,
+                            )
+                            Spacer(modifier = Modifier.height(10.dp))
+                            Text(
+                                text = "開発部",
+                                color = Color.Gray,
+                                fontSize = 16.sp,
+                            )
+                        }
                     }
                 }
             }
